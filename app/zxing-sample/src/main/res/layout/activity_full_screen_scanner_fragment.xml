@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/scanner_fragment"
+        android:name="me.dm7.barcodescanner.zxing.sample.FullScannerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="448dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Place a barcode in the viewfinder rectangle to scan it."
+        android:textColor="#ffffff" />
+
+   <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Barcode Number "
+        android:inputType="number"
+        android:layout_marginBottom="150dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+    </EditText>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="50dp"
+        android:padding="15dp"
+        android:background="@drawable/circle_bg"
+        android:src="@drawable/ic_right_arrow">
+
+    </android.support.design.widget.FloatingActionButton>
+
+</FrameLayout>

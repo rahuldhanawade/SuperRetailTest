@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.virash.superretail.Add_Customer">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar_menu"
+        android:theme="@style/AppTheme2.AppBarOverlay">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="@color/white"
+            app:theme="@style/ToolbarTheme"
+            app:popupTheme="@style/AppTheme2.PopupOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appbar_menu"
+        android:layout_above="@+id/btn_add_gst"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:padding="15dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Customer Name"
+                android:textColor="#0FD3C9"
+                android:textColorHint="#0FD3C9"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0FD3C9"
+                    android:maxLength="10"
+                    android:id="@+id/customer_name"
+                    android:layout_margin="5dp"
+                    android:drawablePadding="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#0FD3C9"
+                    android:textColorLink="#00FFFFFF"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/average" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edt_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Number"
+                android:textColor="#0FD3C9"
+                android:textColorHint="#0FD3C9"
+                app:counterMaxLength="10"
+                android:layout_below="@+id/edt_name"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0FD3C9"
+                    android:maxLength="10"
+                    android:id="@+id/contact"
+                    android:drawablePadding="5dp"
+                    android:layout_margin="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#0FD3C9"
+                    android:textColorLink="#00FFFFFF"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/average" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email ID"
+                android:textColor="#0FD3C9"
+                android:textColorHint="#0FD3C9"
+                android:layout_below="@+id/edt_contact"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0FD3C9"
+                    android:maxLength="10"
+                    android:id="@+id/email"
+                    android:drawablePadding="5dp"
+                    android:layout_margin="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#0FD3C9"
+                    android:textColorLink="#00FFFFFF"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/average" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edt_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:textColor="#0FD3C9"
+                android:textColorHint="#0FD3C9"
+                app:counterMaxLength="10"
+                android:layout_below="@+id/edt_email"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0FD3C9"
+                    android:id="@+id/city"
+                    android:layout_margin="5dp"
+                    android:text=" Mira Road "
+                    android:drawablePadding="1dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#0FD3C9"
+                    android:textColorLink="#00FFFFFF"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/average" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:textColor="#0FD3C9"
+                android:textColorHint="#0FD3C9"
+                app:counterMaxLength="10"
+                android:layout_below="@+id/edt_city"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0FD3C9"
+                    android:id="@+id/address"
+                    android:layout_margin="5dp"
+                    android:selectAllOnFocus="true"
+                    android:drawablePadding="5dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#0FD3C9"
+                    android:textColorLink="#00FFFFFF"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/average" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edt_gst_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Customer/Firm Name"
+                android:textColor="#0FD3C9"
+                android:textColorHint="#0FD3C9"
+                app:counterMaxLength="10"
+                android:layout_below="@+id/edt_address">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0FD3C9"
+                    android:id="@+id/gst_name"
+                    android:layout_margin="5dp"
+                    android:selectAllOnFocus="true"
+                    android:drawablePadding="5dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#0FD3C9"
+                    android:textColorLink="#00FFFFFF"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/average" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/edt_address"-->
+<!--                android:padding="5dp"-->
+<!--                android:id="@+id/tv_gst"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:weightSum="2">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:fontFamily="@font/average"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:text="GST :">-->
+
+<!--                </TextView>-->
+
+<!--            </LinearLayout>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edt_gst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="GST Number"
+                android:textColor="#0FD3C9"
+                android:textColorHint="#0FD3C9"
+                android:layout_below="@+id/edt_gst_contact">
+
+                <EditText
+                    android:id="@+id/add_gst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#0FD3C9"
+                    android:drawablePadding="5dp"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#0FD3C9"
+                    android:textColorLink="#00FFFFFF"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/average" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edt_scc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SCC Code "
+                android:textColor="#0FD3C9"
+                android:textColorHint="#0FD3C9"
+                android:layout_below="@+id/edt_gst"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0FD3C9"
+                    android:id="@+id/add_scc"
+                    android:drawablePadding="5dp"
+                    android:layout_margin="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textColor="#000"
+                    android:textColorHint="#0FD3C9"
+                    android:textColorLink="#00FFFFFF"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/average" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edt_gst_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:textColor="#0FD3C9"
+                android:textColorHint="#0FD3C9"
+                android:layout_below="@+id/edt_scc"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0FD3C9"
+                    android:id="@+id/add_gst_address"
+                    android:drawablePadding="5dp"
+                    android:layout_margin="5dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#0FD3C9"
+                    android:textColorLink="#00FFFFFF"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/average" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_add_gst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/average"
+        android:background="@drawable/box"/>
+
+</RelativeLayout>

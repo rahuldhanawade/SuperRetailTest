@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VendorDetails_Activity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar_menu"
+        android:theme="@style/AppTheme2.AppBarOverlay">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="@color/white"
+            app:theme="@style/ToolbarTheme"
+            app:popupTheme="@style/AppTheme2.PopupOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/tv_save"
+        android:layout_below="@+id/appbar_menu"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/layoutName">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#0fd3c9">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:maxLines="1"
+                        android:hint="Vendor Name"
+                        android:backgroundTint="#0fd3c9"
+                        android:inputType="text"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:textColorHint="#0fd3c9"
+                        android:textColorLink="#00FFFFFF"
+                        android:id="@+id/edt_vendorName"
+                        android:fontFamily="@font/average"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutName"
+                android:id="@+id/layoutMobile">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#0fd3c9">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:inputType="number"
+                        android:backgroundTint="#0fd3c9"
+                        android:fontFamily="@font/average"
+                        android:hint="Mobile Number"
+                        android:layout_margin="5dp"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:textSize="16dp"
+                        android:textColorHint="#0fd3c9"
+                        android:id="@+id/edt_mobileNo"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutMobile"
+                android:id="@+id/layoutEmail">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#0fd3c9">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:fontFamily="@font/average"
+                        android:hint="Email ID"
+                        android:inputType="textEmailAddress"
+                        android:layout_margin="5dp"
+                       android:backgroundTint="#0fd3c9"
+                        android:maxLines="1"
+                        android:textSize="16dp"
+                        android:textColorHint="#0fd3c9"
+                        android:id="@+id/edt_email">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutEmail"
+                android:id="@+id/layoutcity">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#0fd3c9">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:fontFamily="@font/average"
+                        android:hint="City"
+                        android:textColorHint="#0fd3c9"
+                        android:layout_margin="5dp"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="16dp"
+                        android:backgroundTint="#0fd3c9"
+                        android:id="@+id/edt_city">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutcity"
+                android:id="@+id/layoutState">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#0fd3c9">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:fontFamily="@font/average"
+                        android:hint="State"
+                        android:textSize="16dp"
+                        android:textColorHint="#0fd3c9"
+                        android:layout_margin="5dp"
+                        android:inputType="text"
+                        android:backgroundTint="#0fd3c9"
+                        android:maxLines="1"
+                        android:id="@+id/edt_state">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutState"
+                android:id="@+id/layoutPinCode">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#0fd3c9">
+
+                    <EditText
+                        android:id="@+id/edt_pinCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#0fd3c9"
+                        android:fontFamily="@font/average"
+                        android:hint="Pin Code"
+                        android:inputType="number"
+                        android:textSize="16dp"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:textColor="#000"
+                        android:textColorHint="#0fd3c9"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutPinCode"
+                android:id="@+id/layoutAddress">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#0fd3c9">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:fontFamily="@font/average"
+                        android:hint="Address"
+                        android:textColorHint="#0fd3c9"
+                        android:layout_margin="5dp"
+                        android:inputType="textPostalAddress"
+                        android:backgroundTint="#0fd3c9"
+                        android:textSize="16dp"
+                        android:id="@+id/edt_address"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:id="@+id/tv_save"
+        android:gravity="center"
+        android:fontFamily="@font/average"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="3dp"
+        android:textColor="#fff">
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar_menu"
+        android:theme="@style/AppTheme2.AppBarOverlay">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="@color/white"
+            app:theme="@style/ToolbarTheme"
+            app:popupTheme="@style/AppTheme2.PopupOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#fff"
+            android:layout_weight="1.3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/barcode_id"
+                android:fontFamily="@font/average"
+                android:hint="Barcode Number"
+                android:inputType="number">
+
+            </EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:textSize="10dp"
+                android:fontFamily="@font/average"
+                android:text="Please enter Barcode Number "
+                android:layout_height="wrap_content">
+
+            </TextView>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Next"
+    android:id="@+id/sbmt_barcode"
+    android:layout_gravity="bottom|right"
+    android:background="@drawable/box"
+    android:textColor="#fff"
+    android:fontFamily="@font/average"
+    android:layout_marginRight="30dp">
+
+</Button>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.4">
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

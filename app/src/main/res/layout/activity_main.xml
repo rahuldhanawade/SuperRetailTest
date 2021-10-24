@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/r_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="₹"
+        android:textSize="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/supe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="8dp"
+        android:textColor="#000"
+        android:fontFamily="@font/lilita_one"
+        android:text="SUPE"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/r_sign"
+        app:layout_constraintTop_toTopOf="@+id/r_sign" />
+
+    <TextView
+        android:id="@+id/retail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="ETAIL"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/lilita_one"
+        app:layout_constraintBottom_toBottomOf="@+id/r_sign"
+        app:layout_constraintStart_toEndOf="@+id/r_sign" />
+
+    <TextView
+        android:id="@+id/su_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:textSize="60dp"
+        android:text="         "
+        app:layout_constraintBottom_toBottomOf="@+id/supe"
+        app:layout_constraintEnd_toEndOf="@+id/supe"
+        app:layout_constraintStart_toStartOf="@+id/supe"
+        app:layout_constraintTop_toTopOf="@+id/supe" />
+
+    <TextView
+        android:id="@+id/hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:background="#fff"
+        android:text="           "
+        app:layout_constraintBottom_toBottomOf="@+id/retail"
+        app:layout_constraintEnd_toEndOf="@+id/retail"
+        app:layout_constraintStart_toStartOf="@+id/retail"
+        app:layout_constraintTop_toTopOf="@+id/retail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
